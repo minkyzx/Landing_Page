@@ -1,0 +1,362 @@
+/* Gerais */
+body {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+/* Barra de Navegação */
+header, .navbar {
+    background-color: #11192C;
+    padding: 10px 0; /* Diminua o padding superior e inferior */
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 100%;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#navbar-links a {
+    color: white;
+    margin-left: 50px;
+}
+
+#button-menu {
+    background-color: #F9DCBB;
+    border: none;
+    padding: 10px 15px; /* Ajuste no padding para evitar quebra */
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    white-space: nowrap; /* Impede quebra de linha no texto */
+}
+
+
+/* Container Principal */
+.my-container {
+    background-color: #11192C;
+    color: white;
+    margin: 0 auto;
+    padding: 0; /* Remove padding para ajustar ao tamanho da imagem */
+    display: flex;
+    align-items: stretch; /* Faz com que o texto e a imagem tenham alturas proporcionais */
+}
+
+/* Estilos para a imagem */
+.img-right {
+    width: 100%; /* Ajusta a imagem para 100% da largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre o espaço disponível sem distorcer */
+    display: block;
+    
+   
+}
+
+/* Estilos para o texto */
+.p-4 {
+    padding: 2rem 3rem; /* Padding para o texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Torna o container um flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+    height: 100%; /* Para que ocupe toda a altura do flex container */
+    margin-left: 25%;
+}
+
+#txt1, #txt2 {
+    text-align: left;
+    margin-right: 50% ;
+    word-wrap: break-word; /* Permite que palavras longas quebrem a linha */
+    width: 70%; /* Define a largura do contêiner de texto */
+}
+
+#txt1 {
+    font-size: 2.5rem; /* Ajuste conforme necessário */
+}
+
+#txt2 {
+    font-size: 1.2rem; /* Ajuste conforme necessário */
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .col-md-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .p-4 {
+        padding: 2rem 1rem;
+    }
+}
+
+
+
+/* Garantir que as colunas fiquem lado a lado */
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* Segundo Container */
+
+/* Informações do Evento */
+.info-section {
+    background-color: #F9DCBB; /* Cor clara de fundo */
+    padding: 0px 0;
+}
+
+.info-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-card:hover {
+    transform: scale(1.05); /* Leve efeito de zoom ao passar o mouse */
+}
+
+.info-card h5 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Terceiro Container */
+
+ #espetaculo {
+    margin-top: 5%;
+    
+ }
+
+ /* Quarto Container */
+
+ /* Título principal */
+ .promo-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4%;
+  }
+
+  /* Configuração do container */
+  .custom-container {
+    background-color: #11192C; /* Cor de fundo do container */
+    color: #11192C;
+    padding: 100px 0; /* Espaço maior dentro do container */
+    width: 100%;
+    position: relative;
+    min-height: 300px; /* Altura mínima do container */
+    z-index: 1;
+  }
+
+  /* Configuração dos cards */
+  .custom-card {
+    background-color:#F9DCBB;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Aumenta o padding para dar mais espaço no card */
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    margin-top: -100px; /* Coloca os cards para fora do container */
+    z-index: 10; /* Garante que os cards apareçam na frente */
+  }
+
+  .custom-card h3 {
+    color: #11192C;
+    margin-bottom: 20px;
+  }
+
+  .custom-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .custom-card ul li {
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* Configuração dos botões */
+  .custom-button {
+    background-color: #11192C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Centralizando os cards */
+  .custom-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  /* Quinto Container */
+
+  .programacao-title {
+    text-align: center;
+    margin-top: 6%;
+  }
+
+  .programacao-container {
+    margin-top: 5%;
+    width: 1200px;
+    height: 1800px;
+    background-color: #FDF4EA; /* Cor vermelha para identificação */
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    padding: 0;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+.top-section {
+    display: flex;
+    width: 100%;
+    height: 200px; /* Altura dos retângulos */
+}
+
+.rectangle {
+    width: 50%; /* 50% da largura para caber dois retângulos lado a lado */
+    height: 100%; /* Ocupa 100% da altura do container pai (200px) */
+}
+
+.rectangle-green {
+    background-color: #FDF4EA; /* Cor de fundo verde */
+    height: 200px; /* Altura do retângulo */
+    width: 100%; /* Largura total */
+    color: rgb(0, 0, 0); /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Garante que os elementos fiquem um embaixo do outro */
+}
+
+
+.rectangle-yellow {
+    background-color: #11192C; /* Cor de fundo verde */
+    height: 200px; /* Altura do retângulo */
+    width: 100%; /* Largura total */
+    color: rgb(255, 255, 255); /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Garante que os elementos fiquem um embaixo do outro */
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center; /* Centraliza o quadrado horizontalmente */
+}
+
+/* Estilos para a div branca */
+.square-white {
+    background-color: white;
+      width: 98%;
+      height: 1550px;
+      position: relative;
+      padding: 20px;
+  }
+  
+  /* Estilos para o retângulo preto */
+  .rectangle-black {
+      background-color: #11192C;
+      width: 60%;
+      height: 50px;
+      margin: 0 auto; /* Centraliza o retângulo preto horizontalmente */
+      margin-top: 10px; /* Ajuste de espaçamento para descer um pouco */
+      display: flex; /* Adiciona flexbox */
+      justify-content: center; /* Centraliza horizontalmente o conteúdo */
+      align-items: center; /* Centraliza verticalmente o conteúdo */
+      margin-bottom: 20px; /* Espaçamento para separar do conteúdo */
+  }
+  
+  #rec-horario-dia {
+      text-align: center;
+      margin-top: 5px;
+      color: white;
+  }
+  
+  /* Estilos do cronograma */
+  .schedule {
+      margin-top: 20px; /* Espaçamento abaixo do retângulo preto */
+  }
+  
+  .schedule-item {
+      display: flex;
+      flex-direction: column; /* Coloca os itens um embaixo do outro */
+      align-items: flex-start; /* Alinha o horário e a atividade à esquerda */
+      margin-bottom: 10px;
+  }
+  
+  .time {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px; /* Espaçamento entre o horário e a atividade */
+  }
+  
+  .activity {
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+  }
+  
+  hr {
+      border: 0.5px solid #ccc;
+  }
+
+  .bottom-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+  /* Cronograma 2 */
+
+#rec-horario-noite {
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+
+
+
+
+

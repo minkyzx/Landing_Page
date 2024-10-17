@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ff83af732a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container"> 
+            <nav class="navbar navbar-expand-lg">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="img/Camada_1.png" alt="JuriEpico">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-links" 
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar-links">
+                <div class="navbar-nav mx-auto">
+                    <a href="" class="nav-item nav-link" id="home-menu">Sobre</a>
+                    <a href="" class="nav-item nav-link" id="about-menu">Espetáculo</a>
+                    <a href="" class="nav-item nav-link" id="service-menu">Ingressos</a>
+                    <a href="" class="nav-item nav-link" id="team-menu">Depoimentos</a>
+                    <a href="" class="nav-item nav-link" id="contact-menu">Contatos</a>
+                </div>
+                <a href=""><button class="nav-item nav-link" id="button-menu"><strong>Garanta o seu Ingresso</strong></button></a>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Container Primário -->
+<div class="container-fluid my-container">
+    <div class="row no-gutters">
+        <!-- Coluna do Texto -->
+        <div class="col-md-8 d-flex align-items-center"> <!-- 70% do espaço -->
+            <div class="p-4">
+                <h1 id="txt1">Descubra o Mistério do
+                    Juri épico de Bárbara de
+                    Alencar</h1>
+                <p id="txt2">Uma experiência única que une Teatro,<br> Júri Popular e a Revolução de 1817.</p>
+                <a href=""><button class="nav-item nav-link" id="button-menu"><strong>Garanta o seu Ingresso</strong></button></a>
+            </div>
+        </div>
+        
+        <!-- Coluna da Imagem -->
+        <div class="col-md-4"> <!-- 30% do espaço -->
+            <img id="img-right" src="img/imagem1.jpg" class="img-fluid img-right" alt="Imagem do lado direito">
+        </div>
+    </div>
+</div>
+
+
+<!-- Informações do Evento -->
+<section class="info-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center"> <!-- Alinha o card no centro -->
+                <div class="info-card d-flex align-items-center" style="width: 300px; height: 150px;"> <!-- Ajuste o tamanho do card -->
+                    <i class="far fa-calendar-alt fa-2x mr-3"></i> <!-- Ícone do calendário -->
+                    <div class="card-body">
+                        <h5 class="mb-3">Dias 14 a 15</h5>
+                        <p class="card-text">de maio de 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center"> <!-- Alinha o card no centro -->
+                <div class="info-card d-flex align-items-center" style="width: 300px; height: 150px;"> <!-- Ajuste o tamanho do card -->
+                    <i class="fas fa-map-marker-alt fa-2x mr-3"></i> <!-- Ícone de localização -->
+                    <div class="card-body">
+                        <h5 class="mb-3">Crato Ceará</h5>
+                        <p class="text-muted">Centro de Convenções</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Terceiro Container-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="img/barb.png" alt="Imagem do Espetáculo" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8" id="espetaculo">
+            <h2>Sobre o Espetáculo</h2>
+            <p class="justificar">Lorem ipsum dolor sit amet consectetur. Volutpat habitasse eget sed maecenas praesent gravida turpis diam fusce. Risus id at orci quis at vitae risus morbi. Lectus sed ultrices varius mi.</p>
+            <p class="justificar">Erat turpis sit scelerisque nunc morbi. Blandit adipiscing imperdiet ac dignissim non purus tincidunt. Sed ut facilisi amet praesent adipiscing. Nibh bibendum dignissim ut felis erat mauris. Et maecenas turpis nisi morbi vitae convallis eu ullamcorper.</p>
+            <p class="justificar">Nunc sed consequat malesuada non diam. Et netus mus id diam quis.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Quarto Container -->
+ <!-- Título da promoção -->
+ 
+
+ <!-- Container que cobre a largura total da tela -->
+ <div class="custom-container"><h1 class="promo-title">Promoção: Não Perca Essa Oportunidade Única!</h1></div>
+
+ <!-- Wrapper para centralizar os cards -->
+ <div class="custom-cards-wrapper">
+   <!-- Card 1 -->
+   <div class="custom-card">
+     <h3>1º Lote</h3>
+     <p>Lorem ipsum dolor sit amet consectetur.</p>
+     <ul>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+     </ul>
+     <button class="custom-button">Comprar Ingresso</button>
+   </div>
+
+   <!-- Card 2 -->
+   <div class="custom-card">
+     <h3>Acadêmicos</h3>
+     <p>Lorem ipsum dolor sit amet consectetur.</p>
+     <ul>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+     </ul>
+     <button class="custom-button">Comprar Ingresso</button>
+   </div>
+
+   <!-- Card 3 -->
+   <div class="custom-card">
+     <h3>Professores</h3>
+     <p>Lorem ipsum dolor sit amet consectetur.</p>
+     <ul>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+       <li>✓ Lorem ipsum</li>
+     </ul>
+     <button class="custom-button">Comprar Ingresso</button>
+   </div>
+ </div>
+
+ <!-- Quinto Container -->
+
+  <!-- Título da Programação -->
+  <h1 class="programacao-title">Programação Completa</h1>
+
+  <!-- Container Customizado -->
+  <div class="programacao-container">
+    <div class="top-section">
+        <div class="rectangle rectangle-green d-flex justify-content-center align-items-center flex-column">
+            <h4>31.10.2024 (Quinta-Feira)</h4>
+            <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
+        </div>
+        
+        <div class="rectangle rectangle-yellow d-flex justify-content-center align-items-center flex-column">
+            <h4>01.11.2024 (Sexta-Feira)</h4>
+            <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="square-white position-relative">
+            <!-- Retângulo preto -->
+            <div class="rectangle-black"><h3 id="rec-horario-dia">Manhã</h3></div>
+            
+            <!-- Conteúdo do cronograma Dia -->
+            <div class="schedule"> <!-- Margin top ajustada -->
+                <div class="schedule-item">
+                    <p class="time">08h00 às 08h30</p>
+                    <p class="activity font-weight-bold">Credenciamento</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">08h30 às 09h30</p>
+                    <p class="activity font-weight-bold">Palestra 1 (Salão de Atos)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">08h30 às 09h30</p>
+                    <p class="activity font-weight-bold">Palestra 2 (Sala 14)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">09h30 às 10h00</p>
+                    <p class="activity font-weight-bold">Coffee Break</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">10h00 às 11h00</p>
+                    <p class="activity font-weight-bold">Palestra 3 (Salão de Atos)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">10h00 às 11h00</p>
+                    <p class="activity font-weight-bold">Palestra 4 (Sala 14)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">11h00 às 11h30</p>
+                    <p class="activity font-weight-bold">Sessão de Fotos</p>
+                </div>
+            </div>
+            <!-- Retângulo preto -->
+            <div class="rectangle-black"><h3 id="rec-horario-noite">Noite</h3></div>
+            <!-- Conteúdo do cronograma Dia -->
+            <div class="schedule"> <!-- Margin top ajustada -->
+                <div class="schedule-item">
+                    <p class="time">18h00 às 18h30</p>
+                    <p class="activity font-weight-bold">Credenciamento</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">18h30 às 19h30</p>
+                    <p class="activity font-weight-bold">Palestra 5 (Salão de Atos)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">18h30 às 19h30</p>
+                    <p class="activity font-weight-bold">Palestra 6 (Sala 14)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">19h30 às 20h00</p>
+                    <p class="activity font-weight-bold">Coffee Break</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">20h00 às 21h00</p>
+                    <p class="activity font-weight-bold">Palestra 7 (Salão de Atos)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">20h00 às 21h00</p>
+                    <p class="activity font-weight-bold">Palestra 8 (Sala 14)</p>
+                </div>
+                <hr>
+                <div class="schedule-item">
+                    <p class="time">21h00 às 21h30</p>
+                    <p class="activity font-weight-bold">Sessão de Fotos</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    </div>
+
+    
+    
+    
+
+    
+    
+
+
+
+
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
