@@ -1,30 +1,11 @@
-new Swiper('.card-wrapper', {
-    loop: true,
-    spaceBetween: 30,
+const carousel = document.getElementById('carousel');
+const indicators = document.querySelectorAll('.indicators span');
 
-    // Pagination bullets
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // Responsive breakpoints
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
-    }
+carousel.addEventListener('scroll', () => {
+  const cardWidth = carousel.querySelector('.card').offsetWidth;
+  const scrollPosition = carousel.scrollLeft;
+  const index = Math.round(scrollPosition / (cardWidth + 30)); // Ajuste do espaço entre os cards
+  indicators.forEach((indicator, i) => {
+    indicator.classList.toggle('active', i === index);
+  });
 });
