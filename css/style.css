@@ -1,6 +1,7 @@
 /* Gerais */
 body {
     font-family: 'Inria Sans', sans-serif;
+    overflow-x: hidden
 }
 
 .container {
@@ -40,6 +41,10 @@ header, .navbar {
     cursor: pointer;
     border-radius: 10px;
     white-space: nowrap;
+    color: #000000;
+    margin-right: 100%;
+    
+    
 }
 
 /* Container Principal */
@@ -205,6 +210,7 @@ header, .navbar {
 .programacao-title {
     text-align: center;
     margin-top: 6%;
+    font-size: 4vh;
 }
 
 .programacao-container {
@@ -220,11 +226,13 @@ header, .navbar {
 .top-section {
     display: flex;
     width: 100%;
+    gap: 10px; /* Espaçamento entre os retângulos */
 }
 
 .rectangle {
     width: 50%;
     height: 200px;
+    border-radius: 8px; /* Cantos arredondados para os retângulos */
 }
 
 .rectangle-green, .rectangle-yellow {
@@ -237,22 +245,27 @@ header, .navbar {
 .rectangle-green {
     background-color: #FDF4EA;
     color: black;
+    
 }
 
 .rectangle-yellow {
     background-color: #11192C;
     color: white;
+    
 }
 
 .bottom-section {
     display: flex;
     justify-content: center;
+    flex-direction: column; /* Coloca o conteúdo em coluna */
 }
 
 .square-white {
     background-color: white;
-    width: 98%;
+    width: 100%; /* Ajustado para 100% do contêiner */
     padding: 20px;
+    border-radius: 8px; /* Cantos arredondados para o quadrado branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .rectangle-black {
@@ -263,12 +276,14 @@ header, .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px; /* Cantos arredondados */
 }
 
 #rec-horario-dia, #rec-horario-noite {
     text-align: center;
     margin-top: 5px;
     color: white;
+    font-weight: bold; /* Para destacar os títulos */
 }
 
 .schedule-item {
@@ -287,59 +302,125 @@ header, .navbar {
 
 hr {
     border: 0.5px solid #ccc;
+    margin: 10px 0; /* Espaçamento para o separador */
 }
 
-/* Cards após cronograma */
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .rectangle {
+        height: auto; /* Permite que os retângulos se ajustem */
+        padding: 10px; /* Adiciona um pouco de espaço interno */
+    }
 
-.container-cards {
-    margin-top: 50px;
-    text-align: center;
-    margin-left: 4%;
-  }
+    .top-section {
+        flex-direction: column; /* Empilha os retângulos em telas pequenas */
+    }
 
-  .carousel {
+    .rectangle {
+        width: 100%; /* Ajusta para 100% em telas pequenas */
+    }
+
+    .bottom-section {
+        padding: 10px; /* Adiciona um pouco de espaço interno */
+    }
+}
+
+
+
+
+
+/* Sexto Container */
+
+.barba{
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
+    flex-direction: row;
+    margin-top: 100px;
+}
 
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
+#junte{
+    width: 35%;
+    margin-left: 280px;
+    margin-top: 125px;
+    display: grid;
+    grid-auto-rows: 150px;
+}
 
-  .card {
-    flex: 0 0 auto;
-    width: 300px;
-    margin: 0 15px;
-    scroll-snap-align: center;
-    background-color: #0175e9;
+#barbar{
+    width: 525px;
+    z-index: -1;
+}
+
+#but-barba {
+    background-color: #F9DCBB;
     border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    white-space: nowrap;
+    color: #000000;
+    
+}
+
+
+/* Setimo Container */
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.accordion {
+    --bs-accordion-active-color: #000000;
+    --bs-accordion-active-bg: #f9dcbb;
+    max-width: 1000px;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  .accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+  }
+  
+  .accordion-button.collapsed {
+    border: 1px solid #d8d8d8;
+    background-color:#F9DCBB;
+  }
+  
+  .accordion-collapse {
+    transition: all 0.3s;
   }
 
-  .card-body img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+  #accordiontwo{
+    background-color: #fff;
+    color: black;
+    border:0 10px 0 0 solid #000000;
   }
 
-  .card-text {
-    margin: 20px 0;
+  #pf{
+    text-align: center;
+    margin-bottom: 50px;
   }
 
-  .indicators {
-    margin-top: 15px;
-  }
+.footer {
+    margin-top: 150px;
+    background-color: #11192C; /* Cor escura do footer */
+    color: #ffffff;
+}
 
-  .indicators span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-  }
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-  .indicators .active {
-    background-color: #000;
-  }
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+ 
