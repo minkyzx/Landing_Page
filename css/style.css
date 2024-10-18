@@ -1,45 +1,37 @@
 /* Gerais */
 body {
-  font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inria Sans', sans-serif;
 }
 
 .container {
-  padding: 70px 0;
+    padding: 70px 0;
 }
 
 /* Barra de Navegação */
-<<<<<<< HEAD
 header, .navbar {
     background-color: #11192C;
     padding: 10px 0;
-=======
-header,
-.navbar {
-  background-color: #11192C;
-  padding: 10px 0;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 #nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #logo {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar-brand {
-  color: white;
+    color: white;
 }
 
 #navbar-links a {
-  color: white;
-  margin-left: 50px;
+    color: white;
+    margin-left: 50px;
 }
 
 #button-menu {
-<<<<<<< HEAD
     background-color: #F9DCBB;
     border: none;
     padding: 10px 15px;
@@ -48,55 +40,28 @@ header,
     cursor: pointer;
     border-radius: 10px;
     white-space: nowrap;
-=======
-  background-color: #F9DCBB;
-  border: none;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  white-space: nowrap;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 /* Container Principal */
 .my-container {
-<<<<<<< HEAD
     background-color: #11192C;
     color: white;
     margin: 0 auto;
     padding: 0;
     display: flex;
     align-items: stretch;
-=======
-  background-color: #11192C;
-  color: white;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  align-items: stretch;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 /* Estilos para a imagem */
 .img-right {
-<<<<<<< HEAD
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-=======
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 /* Estilos para o texto */
 .p-4 {
-<<<<<<< HEAD
     padding: 2rem 3rem;
     text-align: center;
     display: flex;
@@ -119,88 +84,51 @@ header,
 
 #txt2 {
     font-size: 1.2rem;
-=======
-  padding: 2rem 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin-left: 25%;
-}
-
-#txt1,
-#txt2 {
-  text-align: left;
-  margin-right: 50%;
-  word-wrap: break-word;
-  width: 70%;
-}
-
-#txt1 {
-  font-size: 2.5rem;
-}
-
-#txt2 {
-  font-size: 1.2rem;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 /* Ajustes para responsividade */
 @media (max-width: 768px) {
+    .col-md-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
-  .col-md-8,
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .p-4 {
-    padding: 2rem 1rem;
-  }
+    .p-4 {
+        padding: 2rem 1rem;
+    }
 }
 
 /* Segundo Container */
 .info-section {
-<<<<<<< HEAD
     background-color: #F9DCBB;
     padding: 0;
-=======
-  background-color: #F9DCBB;
-  padding: 0;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 .info-card {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 50px;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .info-card:hover {
-<<<<<<< HEAD
     transform: scale(1.05);
-=======
-  transform: scale(1.05);
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 .info-card h5 {
-  font-size: 1.25rem;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .info-card p {
-  color: #666;
-  font-size: 1rem;
+    color: #666;
+    font-size: 1rem;
 }
 
 /* Terceiro Container */
 #espetaculo {
-<<<<<<< HEAD
     margin-top: 5%;
 }
 
@@ -225,7 +153,7 @@ header,
 }
 
 .custom-card {
-    background-color:#F9DCBB;
+   background-color:#F9DCBB;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 40px; /* Aumenta o padding para dar mais espaço no card */
@@ -359,180 +287,10 @@ header,
 
 hr {
     border: 0.5px solid #ccc;
-=======
-  margin-top: 5%;
-}
-
-/* Quarto Container */
-.promo-title {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 4%;
-}
-
-.custom-container {
-  background-color: #11192C;
-  /* Cor de fundo do container */
-  color: #11192C;
-  padding: 100px 0;
-  /* Espaço maior dentro do container */
-  width: 100%;
-  position: relative;
-  min-height: 300px;
-  /* Altura mínima do container */
-  z-index: 1;
-}
-
-.custom-card {
-  background-color: #F9DCBB;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  /* Aumenta o padding para dar mais espaço no card */
-  text-align: center;
-  width: 350px;
-  height: 450px;
-  position: relative;
-  margin-top: -100px;
-  /* Coloca os cards para fora do container */
-  z-index: 10;
-  /* Garante que os cards apareçam na frente */
-}
-
-.custom-card h3 {
-  color: #11192C;
-  margin-bottom: 20px;
-}
-
-.custom-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-
-.custom-card ul li {
-  margin: 10px 0;
-  color: #333;
-}
-
-.custom-button {
-  background-color: #11192C;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.custom-button:hover {
-  background-color: #0056b3;
-}
-
-.custom-cards-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Quinto Container */
-.programacao-title {
-  text-align: center;
-  margin-top: 6%;
-}
-
-.programacao-container {
-  margin-top: 5%;
-  width: 100%;
-  /* Responsividade */
-  background-color: #FDF4EA;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 10px;
-}
-
-.top-section {
-  display: flex;
-  width: 100%;
-}
-
-.rectangle {
-  width: 50%;
-  height: 200px;
-}
-
-.rectangle-green,
-.rectangle-yellow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.rectangle-green {
-  background-color: #FDF4EA;
-  color: black;
-}
-
-.rectangle-yellow {
-  background-color: #11192C;
-  color: white;
-}
-
-.bottom-section {
-  display: flex;
-  justify-content: center;
-}
-
-.square-white {
-  background-color: white;
-  width: 98%;
-  padding: 20px;
-}
-
-.rectangle-black {
-  background-color: #11192C;
-  width: 60%;
-  height: 50px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#rec-horario-dia,
-#rec-horario-noite {
-  text-align: center;
-  margin-top: 5px;
-  color: white;
-}
-
-.schedule-item {
-  margin-bottom: 10px;
-}
-
-.schedule-item .time {
-  font-size: 14px;
-  color: #555;
-}
-
-.schedule-item .activity {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-hr {
-  border: 0.5px solid #ccc;
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
 }
 
 /* Cards após cronograma */
 .card-wrapper {
-<<<<<<< HEAD
     margin-top: 5%; /* Margem ajustada para seguir o cronograma */
     max-width: 1100px;
     margin: 0 auto;
@@ -585,58 +343,3 @@ hr {
 #texto {
     color: white;
 }
-=======
-  margin-top: 5%;
-  /* Margem ajustada para seguir o cronograma */
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.card-item {
-  list-style: none;
-}
-
-.card-item .card-link {
-  display: block;
-  background: #11192C;
-  padding: 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-}
-
-.card-link:hover {
-  border-color: #5372F0;
-}
-
-.card-link .card-image {
-  width: 30%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.card-link .badge {
-  background: #DDE4FF;
-  margin: 16px 0 18px;
-}
-
-.card-link .card-title {
-  font-size: 1.19rem;
-  font-weight: 600;
-}
-
-.card-button {
-  margin: 30px 0 5px;
-  background: none;
-  border-radius: 50%;
-  border: 2px solid #5372F0;
-}
-
-.card-link:hover .card-button {
-  background: #5372F0;
-}
-
-#texto {
-  color: white;
-}
->>>>>>> dd0310b7800066f6b575db38eed8974c819f5495
