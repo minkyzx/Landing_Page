@@ -53,11 +53,11 @@
                         <a href="" class="nav-item nav-link" id="home-menu">Sobre</a>
                         <a href="#espetaculo" class="nav-item nav-link" id="about-menu">Espetáculo</a>
                         <a href="#ingressos" class="nav-item nav-link" id="service-menu">Ingressos</a>
-                        <a href="" class="nav-item nav-link" id="team-menu">Depoimentos</a>
+                        <a href="" class="nav-item nav-link" id="team-menu">Perguntas</a>
                         <a href="" class="nav-item nav-link" id="contact-menu">Contatos</a>
                     </div>
-                    <a href=""><button class="nav-item nav-link" id="button-menu"><strong>Garanta o seu
-                                Ingresso</strong></button></a>
+                    <a href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133"><button
+                            class="nav-item nav-link" id="button-menu"><strong>Reservar Ingresso</strong></button></a>
                 </div>
             </nav>
         </div>
@@ -73,8 +73,8 @@
                         Juri épico de Bárbara de
                         Alencar - O espetáculo.</h1>
                     <p id="txt2">Uma experiência única que une Teatro,<br> Júri Popular e a Revolução de 1817.</p>
-                    <a href=""><button class="nav-item " id="button-menu"><strong>Garanta o seu
-                                Ingresso</strong></button></a>
+                    <a href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133"><button
+                            class="nav-item " id="button-menu"><strong>Reservar Ingresso</strong></button></a>
                 </div>
             </div>
 
@@ -107,7 +107,7 @@
                         <i class="fas fa-map-marker-alt fa-2x mr-3"></i> <!-- Ícone de localização -->
                         <div class="card-body">
                             <h5 class="mb-3">Crato - Ceará</h5>
-                            <p class="text-muted">(A Definir)</p>
+                            <p class="text-muted">Centro de Convenções do Cariri</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,9 @@
                 <li>✓ Lorem ipsum</li>
                 <li>✓ Lorem ipsum</li>
             </ul>
-            <button class="custom-button">Comprar Ingresso</button>
+            <a href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133">
+                <button class="custom-button">Reservar Ingresso</button>
+            </a>
         </div>
 
         <!-- Card 2 -->
@@ -168,7 +170,9 @@
                 <li>✓ Lorem ipsum</li>
                 <li>✓ Lorem ipsum</li>
             </ul>
-            <button class="custom-button">Comprar Ingresso</button>
+            <a href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133">
+                <button class="custom-button">Reservar Ingresso</button>
+            </a>
         </div>
 
         <!-- Card 3 -->
@@ -181,7 +185,9 @@
                 <li>✓ Lorem ipsum</li>
                 <li>✓ Lorem ipsum</li>
             </ul>
-            <button class="custom-button">Comprar Ingresso</button>
+            <a href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133">
+                <button class="custom-button">Reservar Ingresso</button>
+            </a>
         </div>
     </div>
 
@@ -193,169 +199,175 @@
     <!-- Container Customizado -->
     <!-- Container Customizado -->
     <!-- Container Customizado -->
-<div class="programacao-container">
-    <div class="top-section">
-        <!-- Botão para o cronograma da quinta-feira -->
-        <div class="rectangle rectangle-green d-flex justify-content-center align-items-center flex-column">
-            <button class="btn btn-link text-black" data-bs-toggle="collapse" data-bs-target="#cronogramaDia1"
-                aria-expanded="false" aria-controls="cronogramaDia1">
-                <h4>31.10.2024 (Quinta-Feira)</h4>
-                <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
-            </button>
+    <div class="programacao-container">
+        <div class="top-section">
+            <!-- Botão para o cronograma da quinta-feira -->
+            <div class="rectangle rectangle-green d-flex justify-content-center align-items-center flex-column">
+                <button class="btn btn-link text-black" data-bs-toggle="collapse" data-bs-target="#cronogramaDia1"
+                    aria-expanded="false" aria-controls="cronogramaDia1">
+                    <h4>31.10.2024 (Quinta-Feira)</h4>
+                    <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
+                </button>
+            </div>
+
+            <!-- Botão para o cronograma da sexta-feira -->
+            <div class="rectangle rectangle-yellow d-flex justify-content-center align-items-center flex-column">
+                <button class="btn btn-link text-white" data-bs-toggle="collapse" data-bs-target="#cronogramaDia2"
+                    aria-expanded="false" aria-controls="cronogramaDia2">
+                    <h4>01.11.2024 (Sexta-Feira)</h4>
+                    <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
+                </button>
+            </div>
         </div>
 
-        <!-- Botão para o cronograma da sexta-feira -->
-        <div class="rectangle rectangle-yellow d-flex justify-content-center align-items-center flex-column">
-            <button class="btn btn-link text-white" data-bs-toggle="collapse" data-bs-target="#cronogramaDia2"
-                aria-expanded="false" aria-controls="cronogramaDia2">
-                <h4>01.11.2024 (Sexta-Feira)</h4>
-                <p>Turno: Manhã e Noite (Faculdade UNIFAMEC)</p>
-            </button>
+        <!-- Cronograma da quinta-feira (inicialmente escondido) -->
+        <div id="cronogramaDia1" class="collapse">
+            <div class="bottom-section">
+                <div class="square-white">
+                    <!-- Retângulo preto -->
+                    <div class="rectangle-black">
+                        <h3 id="rec-horario-dia">Manhã</h3>
+                    </div>
+                    <!-- Conteúdo do cronograma Dia -->
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <p class="time">08h00 às 09h00</p>
+                            <p class="activity font-weight-bold">Credenciamento</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">09h00 às 10h00</p>
+                            <p class="activity font-weight-bold">Palestra 1 (Salão de Atos): A Virtualização dos
+                                Tribunais: Impactos na Dinâmica Processual e no Papel da Justiça</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">10h00 às 10h30</p>
+                            <p class="activity font-weight-bold">Coffee Break</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">10h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Palestra 2 (Salão de Atos): A Rede de Apoio às Mulheres
+                                Vítimas de Violência no Cariri: Integração entre Justiça, Polícia e Assistência Social
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">11h30 às 12h00</p>
+                            <p class="activity font-weight-bold">Sessão de Fotos</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Retângulo preto para o turno da noite -->
+                    <div class="rectangle-black">
+                        <h3 id="rec-horario-noite">Noite</h3>
+                    </div>
+                    <!-- Conteúdo do cronograma Noite -->
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <p class="time">18h00 às 18h30</p>
+                            <p class="activity font-weight-bold">Credenciamento</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">18h30 às 19h30</p>
+                            <p class="activity font-weight-bold">Palestra 3 (Salão de Atos): Justiça Digital: Benefícios
+                                da
+                                Virtualização para Celeridade Processual e Inclusão</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">19h30 às 20h00</p>
+                            <p class="activity font-weight-bold">Coffee Break</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">20h00 às 21h00</p>
+                            <p class="activity font-weight-bold">Palestra 4 (Salão de Atos): O Impacto do Acordo de Não
+                                Persecução Penal na
+                                Efetividade da Justiça Criminal</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">21h00 às 21h30</p>
+                            <p class="activity font-weight-bold">Sessão de Fotos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- Cronograma da quinta-feira (inicialmente escondido) -->
-    <div id="cronogramaDia1" class="collapse">
-        <div class="bottom-section">
-            <div class="square-white">
-                <!-- Retângulo preto -->
-                <div class="rectangle-black">
-                    <h3 id="rec-horario-dia">Manhã</h3>
-                </div>
-                <!-- Conteúdo do cronograma Dia -->
-                <div class="schedule">
-                    <div class="schedule-item">
-                        <p class="time">08h00 às 09h00</p>
-                        <p class="activity font-weight-bold">Credenciamento</p>
+        <!-- Cronograma da sexta-feira (inicialmente escondido) -->
+        <div id="cronogramaDia2" class="collapse">
+            <div class="bottom-section">
+                <div class="square-white">
+                    <!-- Retângulo preto -->
+                    <div class="rectangle-black">
+                        <h3 id="rec-horario-dia">Manhã</h3>
                     </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">09h00 às 10h00</p>
-                        <p class="activity font-weight-bold">Palestra 1 (Salão de Atos): A Virtualização dos
-                            Tribunais: Impactos na Dinâmica Processual e no Papel da Justiça</p>
+                    <!-- Conteúdo do cronograma Dia -->
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <p class="time">08h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Minicurso 1 (Sala 09): A Persuação na Oratória
+                                Jurídica:
+                                Convencendo Juízes e Jurados</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">08h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Minicurso 2 (Sala 10): A Justiça do Tribunal do Júri:
+                                Quando a Defesa Técnica Pode ser Desafiada</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">08h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Minicurso 3 (Sala 11): Como Estruturar uma Pesquisa
+                                Científica: Da Formulação de Problemas à Redação Final</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">08h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Minicurso 4 (Sala 16): Produção de Conteúdo Jurídico:
+                                Como
+                                Aumentar Sua Autoridade Online</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">08h30 às 11h30</p>
+                            <p class="activity font-weight-bold">Minicurso 5 (Sala 17): Sustentabilidade e
+                                Responsabilidade
+                                Social no Direito através do Design Thinking</p>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">10h00 às 10h30</p>
-                        <p class="activity font-weight-bold">Coffee Break</p>
+                    <!-- Retângulo preto para o turno da noite -->
+                    <div class="rectangle-black">
+                        <h3 id="rec-horario-noite">Noite</h3>
                     </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">10h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Palestra 2 (Salão de Atos): A Rede de Apoio às Mulheres
-                            Vítimas de Violência no Cariri: Integração entre Justiça, Polícia e Assistência Social
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">11h30 às 12h00</p>
-                        <p class="activity font-weight-bold">Sessão de Fotos</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- Retângulo preto para o turno da noite -->
-                <div class="rectangle-black">
-                    <h3 id="rec-horario-noite">Noite</h3>
-                </div>
-                <!-- Conteúdo do cronograma Noite -->
-                <div class="schedule">
-                    <div class="schedule-item">
-                        <p class="time">18h00 às 18h30</p>
-                        <p class="activity font-weight-bold">Credenciamento</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">18h30 às 19h30</p>
-                        <p class="activity font-weight-bold">Palestra 3 (Salão de Atos): Justiça Digital: Benefícios da
-                            Virtualização para Celeridade Processual e Inclusão</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">19h30 às 20h00</p>
-                        <p class="activity font-weight-bold">Coffee Break</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">20h00 às 21h00</p>
-                        <p class="activity font-weight-bold">Palestra 4 (Salão de Atos): O Impacto do Acordo de Não Persecução Penal na
-                            Efetividade da Justiça Criminal</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">21h00 às 21h30</p>
-                        <p class="activity font-weight-bold">Sessão de Fotos</p>
+                    <!-- Conteúdo do cronograma Noite -->
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <p class="time">18h30 às 19h00</p>
+                            <p class="activity font-weight-bold">Credenciamento</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">19h30 às 21h00</p>
+                            <p class="activity font-weight-bold">Júri Épico: Caso Bárbara de Alencar</p>
+                        </div>
+                        <hr>
+                        <div class="schedule-item">
+                            <p class="time">21h00 às 1h30</p>
+                            <p class="activity font-weight-bold">Minicurso 1 (Sala 09): A Persuação na Oratória
+                                Jurídica:
+                                Convencendo Juízes e Jurados</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Cronograma da sexta-feira (inicialmente escondido) -->
-    <div id="cronogramaDia2" class="collapse">
-        <div class="bottom-section">
-            <div class="square-white">
-                <!-- Retângulo preto -->
-                <div class="rectangle-black">
-                    <h3 id="rec-horario-dia">Manhã</h3>
-                </div>
-                <!-- Conteúdo do cronograma Dia -->
-                <div class="schedule">
-                    <div class="schedule-item">
-                        <p class="time">08h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Minicurso 1 (Sala 09): A Persuação na Oratória Jurídica:
-                            Convencendo Juízes e Jurados</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">08h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Minicurso 2 (Sala 10): A Justiça do Tribunal do Júri:
-                            Quando a Defesa Técnica Pode ser Desafiada</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">08h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Minicurso 3 (Sala 11): Como Estruturar uma Pesquisa
-                            Científica: Da Formulação de Problemas à Redação Final</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">08h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Minicurso 4 (Sala 16): Produção de Conteúdo Jurídico: Como
-                            Aumentar Sua Autoridade Online</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">08h30 às 11h30</p>
-                        <p class="activity font-weight-bold">Minicurso 5 (Sala 17): Sustentabilidade e Responsabilidade
-                            Social no Direito através do Design Thinking</p>
-                    </div>
-                </div>
-                <!-- Retângulo preto para o turno da noite -->
-                <div class="rectangle-black">
-                    <h3 id="rec-horario-noite">Noite</h3>
-                </div>
-                <!-- Conteúdo do cronograma Noite -->
-                <div class="schedule">
-                    <div class="schedule-item">
-                        <p class="time">18h30 às 19h00</p>
-                        <p class="activity font-weight-bold">Credenciamento</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">19h30 às 21h00</p>
-                        <p class="activity font-weight-bold">Júri Épico: Caso Bárbara de Alencar</p>
-                    </div>
-                    <hr>
-                    <div class="schedule-item">
-                        <p class="time">21h00 às 1h30</p>
-                        <p class="activity font-weight-bold">Minicurso 1 (Sala 09): A Persuação na Oratória Jurídica:
-                            Convencendo Juízes e Jurados</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
     <!-- Sexto Container-->
@@ -364,8 +376,8 @@
         <div id="junte">
             <h1>Junte-se a nós nessa<br>jornada épica!</h1>
 
-            <a href="#"><button class="nav-item nav-link" id="but-barba"><strong>Garanta o seu
-                        Ingresso</strong></button></a>
+            <a id="btu" href="https://www.sympla.com.br/jUri-Epico-de-bArbara-de-alencar__2705133"><button
+                    class="nav-item nav-link" id="but-barba"><strong>Reservar Ingresso</strong></button></a>
         </div>
         <div id="dbaba">
             <img id="barbar" src="img/imagem4.jpg" alt="#">
@@ -536,21 +548,25 @@
     <footer class="footer text-light py-1">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 m">
                     <p><strong>Telefone Fixo:</strong> (11) 1234-5678</p>
                     <p><strong>Celular:</strong> (11) 91234-5678</p>
                     <p><strong>E-mail:</strong> contato.exemplo@dominio.com</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p> Sigam-nos nas Redes Sociais</p>
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-twitter"></i></a>
                     <a href="#"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class="col-md-4 text-md-end">
                     <p><strong>Endereço:</strong></p>
-                    <p>Rua Exemplo, 456, Bairro Modelo</p>
-                    <p>Cidade Exemplo, Estado Exemplo, CEP 00000-000</p>
+                    <p>AV. PADRE CÍCERO, 4400, MURITI</p>
+                    <p>CRATO - CE, 63133-830</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.098598334531!2d-39.370204199999996!3d-7.2295938999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a183a8d9362631%3A0x7025a14aa3ac62e!2sCentro%20de%20Conven%C3%A7%C3%B5es%20do%20Cariri!5e0!3m2!1spt-BR!2sbr!4v1729859379654!5m2!1spt-BR!2sbr"
+                        width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="text-center mt-3">
