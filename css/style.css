@@ -1,7 +1,7 @@
-/* Gerais */
+/* Geral */
 body {
     font-family: 'Inria Sans', sans-serif;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .container {
@@ -43,8 +43,6 @@ header, .navbar {
     white-space: nowrap;
     color: #000000;
     margin-right: 100%;
-    
-    
 }
 
 /* Container Principal */
@@ -91,18 +89,6 @@ header, .navbar {
     font-size: 1.2rem;
 }
 
-/* Ajustes para responsividade */
-@media (max-width: 768px) {
-    .col-md-8, .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .p-4 {
-        padding: 2rem 1rem;
-    }
-}
-
 /* Segundo Container */
 .info-section {
     background-color: #F9DCBB;
@@ -115,7 +101,10 @@ header, .navbar {
     padding: 50px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    padding-top: 2%;
+    
 }
+
 
 .info-card:hover {
     transform: scale(1.05);
@@ -148,12 +137,12 @@ header, .navbar {
 }
 
 .custom-container {
-    background-color: #11192C; /* Cor de fundo do container */
+    background-color: #11192C;
     color: #11192C;
-    padding: 100px 0; /* Espaço maior dentro do container */
+    padding: 100px 0;
     width: 100%;
     position: relative;
-    min-height: 300px; /* Altura mínima do container */
+    min-height: 300px;
     z-index: 1;
 }
 
@@ -161,13 +150,13 @@ header, .navbar {
     background-color:#F9DCBB;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px; /* Aumenta o padding para dar mais espaço no card */
+    padding: 40px;
     text-align: center;
     width: 350px;
     height: 450px;
     position: relative;
-    margin-top: -100px; /* Coloca os cards para fora do container */
-    z-index: 10; /* Garante que os cards apareçam na frente */
+    margin-top: -100px;
+    z-index: 10;
 }
 
 .custom-card h3 {
@@ -215,7 +204,7 @@ header, .navbar {
 
 .programacao-container {
     margin-top: 5%;
-    width: 100%; /* Responsividade */
+    width: 100%;
     background-color: #FDF4EA;
     display: flex;
     flex-direction: column;
@@ -226,13 +215,13 @@ header, .navbar {
 .top-section {
     display: flex;
     width: 100%;
-    gap: 10px; /* Espaçamento entre os retângulos */
+    gap: 10px;
 }
 
 .rectangle {
     width: 50%;
     height: 200px;
-    border-radius: 8px; /* Cantos arredondados para os retângulos */
+    border-radius: 8px;
 }
 
 .rectangle-green, .rectangle-yellow {
@@ -245,27 +234,25 @@ header, .navbar {
 .rectangle-green {
     background-color: #FDF4EA;
     color: black;
-    
 }
 
 .rectangle-yellow {
     background-color: #11192C;
     color: white;
-    
 }
 
 .bottom-section {
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Coloca o conteúdo em coluna */
+    flex-direction: column;
 }
 
 .square-white {
     background-color: white;
-    width: 100%; /* Ajustado para 100% do contêiner */
+    width: 100%;
     padding: 20px;
-    border-radius: 8px; /* Cantos arredondados para o quadrado branco */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .rectangle-black {
@@ -276,14 +263,14 @@ header, .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px; /* Cantos arredondados */
+    border-radius: 8px;
 }
 
 #rec-horario-dia, #rec-horario-noite {
     text-align: center;
     margin-top: 5px;
     color: white;
-    font-weight: bold; /* Para destacar os títulos */
+    font-weight: bold;
 }
 
 .schedule-item {
@@ -302,35 +289,10 @@ header, .navbar {
 
 hr {
     border: 0.5px solid #ccc;
-    margin: 10px 0; /* Espaçamento para o separador */
+    margin: 10px 0;
 }
-
-/* Responsividade adicional */
-@media (max-width: 768px) {
-    .rectangle {
-        height: auto; /* Permite que os retângulos se ajustem */
-        padding: 10px; /* Adiciona um pouco de espaço interno */
-    }
-
-    .top-section {
-        flex-direction: column; /* Empilha os retângulos em telas pequenas */
-    }
-
-    .rectangle {
-        width: 100%; /* Ajusta para 100% em telas pequenas */
-    }
-
-    .bottom-section {
-        padding: 10px; /* Adiciona um pouco de espaço interno */
-    }
-}
-
-
-
-
 
 /* Sexto Container */
-
 .barba{
     display: flex;
     flex-direction: row;
@@ -360,13 +322,9 @@ hr {
     border-radius: 10px;
     white-space: nowrap;
     color: #000000;
-    
 }
 
-
-/* Setimo Container */
-
-
+/* Sétimo Container */
 .carousel::-webkit-scrollbar {
     display: none;
 }
@@ -376,36 +334,37 @@ hr {
     max-width: 1000px;
     margin-left: 200px;
     margin-top: 100px;
-  }
-  
-  .accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+}
+
+.accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
     border: 2px solid #000000;
     box-shadow: 5px 5px #000000;
-  }
-  
-  .accordion-button.collapsed {
+}
+
+.accordion-button.collapsed {
     border: 1px solid #d8d8d8;
     background-color:#F9DCBB;
-  }
-  
-  .accordion-collapse {
-    transition: all 0.3s;
-  }
+}
 
-  #accordiontwo{
+.accordion-collapse {
+    transition: all 0.3s;
+}
+
+#accordiontwo{
     background-color: #fff;
     color: black;
     border:0 10px 0 0 solid #000000;
-  }
+}
 
-  #pf{
+#pf{
     text-align: center;
     margin-bottom: 50px;
-  }
+}
 
+/* Footer */
 .footer {
     margin-top: 150px;
-    background-color: #11192C; /* Cor escura do footer */
+    background-color: #11192C;
     color: #ffffff;
 }
 
@@ -425,4 +384,107 @@ hr {
 
 #btu{
     text-decoration: none;
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 600px) {
+
+    /* Ajuste de margens e padding globais */
+    .container, .my-container, .promo-title, .custom-container, .footer {
+        padding: 20px 10px;
+    }
+
+    /* Barra de Navegação */
+    #navbar-links a {
+        margin-left: 20px;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+    #button-menu {
+        padding: 8px 10px;
+        margin-right: 0;
+    }
+
+    /* Imagem e texto no container principal */
+    .p-4 {
+        padding: 1rem;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #txt1 {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+    }
+    #txt2 {
+        font-size: 1rem;
+    }
+
+    /* Ajuste das Info Cards */
+    .info-card {
+        padding: 20px;
+    }
+    .info-card h5 {
+        font-size: 1rem;
+    }
+    .info-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Estilos para o Quarto Container */
+    .custom-card {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .custom-cards-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Quinto Container: Programação */
+    .programacao-title {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+        margin-top: 10px;
+    }
+    .programacao-container {
+        padding: 10px;
+    }
+    .rectangle {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .top-section {
+        flex-direction: column;
+    }
+
+    /* Sexto Container */
+    .barba {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #junte {
+        width: 80%;
+        margin: 0;
+    }
+    #barbar {
+        width: 100%;
+    }
+
+    /* Sétimo Container: Accordion */
+    .accordion {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .footer i {
+        font-size: 1.2rem;
+    }
 }
